@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<!-- 超链接 -->
+	<a href="https://www.baidu.com/">百度</a>
+	<!--快捷键为:a按Tab键  href意为超链接,后边跟链接到的地址  a标签中间写超链接到的文件  -->
+<!-- 图片 -->
+	<img src="地址" alt="替换文本" title="鼠标滑过时显示的文字">
+	<!-- img是image的缩写，意为图片  src是图片的地址  alt是图片出错时显示  title是鼠标经过时显示的文字，区别于title标签 -->
+<!-- 标题标签 -->
+	<title></title>
+	<!-- 是head里边的标题，用于提示电脑显示的网页标题 -->
+	<h1></h1>
+	<h2></h2>
+	<h3></h3>
+	<!-- 是文本标题，从数字1到数字6，最多只有6级，数字越小标题越大 -->
+	<thead></thead>
+	<!-- 是表格里的表头标签，缩写为th -->
+<!-- 段落 -->
+	<p></p>
+	<!-- 用于段与段之间存在间隙使用 -->
+<!-- 换行 -->
+	<br>
+	<!-- 为单标签，适用于文本之间强行换行，不与段落标签同时使用 -->
+<!-- 下划线 -->
+	<hr>
+	<!-- 单标签，用于添加下划线 -->
+<!-- 无序列表 -->
+	<ul>
+	<!-- 快捷键：ul>li*3按Tab键 -->
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+<!-- 有序列表 -->
+	<ol>
+	<!-- 快捷键:ol>li*3按Tab键 -->
+		<li></li>
+		<li></li>
+		<li></li>
+	</ol>
+<!-- 自定义列表 -->
+	<dl>
+	<!-- 快捷键:dl>dt+dd*3按Tab键 -->
+		<dt></dt>
+		<dd></dd>
+		<dd></dd>
+		<dd></dd>
+	</dl>
+<!-- 表格 -->
+	<table>
+		<thead>
+			<tr>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<!-- <td></td> -->
+				<td colspan="3" align="left"></td>
+				<!-- <td></td> -->
+			</tr>
+			<tr>
+				<!-- <td></td> -->
+				<td rowspan="3" align="right"></td>
+				<!-- <td></td> -->
+			</tr>
+		</tbody>
+	</table>
+<!-- div -->
+	<div style="width:200px; height:200px; background-color:skyblue; border:2px solid red; margin-top:20px;"></div>
+				<!-- 宽  高  背景色  边框：粗细 实线 颜色 距离-->
+<!-- 表单 -->
+	<form action="10php" methed="post">
+		<!-- get提交的内容显示在地址栏  不安全  提交的信息有大小限制 -->
+		<!-- post提交的内容不显示在地址栏  较安全  提交的信息没有大小限制 -->
+		<p>
+			姓名: <input type="text" name="username">
+			<!-- name属性值可自定义  type属性值不可自定义  text:文本框  value:值,此处为用户填写-->
+		</p>
+		<p>
+			年龄: <input type="number" name="age">
+			<!-- number:可替换为text value为用户填写-->
+		</p>
+		<p>
+			性别: <input type="radio" name="gender" value="male">男
+				<input type="radio" name="gender" value="female">女
+			<!-- radio意为收音机，此处为单选  gender可替换为sex  male是男性  female是女性 -->
+		</p>
+		<p>
+			爱好: <input type="checkbox" name="hobby" value="sing">唱歌
+				 <input type="checkbox" name="hobby" value="dance">跳舞
+			<!-- checkbox是多选  hobby爱好  value值必须与后边对应 -->
+		</p>
+		<p>
+			城市：<select name="city" id="">
+			<!-- name对应前边字段  id是唯一的一个属性，不能重复 -->
+					<option value="beijing">北京</option>
+					<!-- 此处value是对应中间内容的值 -->
+			</select>
+		</p>
+	<!-- 多行文本（文本域） -->
+		<textarea name="" id="" cols="30" rows="10"></textarea>
+			<!-- textarea为文本域  name对应<textarea>字段里边的值  cols为列  rows为行 -->
+		<p>
+	<!-- 按钮 -->
+			<input type="button" value="点击">
+			<!-- button为点击，很少用 -->
+			<input type="submit" value="提交">
+			<!-- submit默认提交，value值为设定好的值 -->
+			<input type="reset" value="重置">
+			<!-- reset默认重置,value值表现方式同submit -->
+		</p>
+	</form>
+<!-- 块元素 -->
+	独自占一行，可以设置宽高
+	<!-- 代表有： div  p  h1  ul  ol  dl  dt  dd -->
+<!-- 行内元素 -->
+	<!-- 不独自占一行，不可以设置宽高 -->
+	<!-- 代表： span  b  strong  a  u  i -->
+	<!-- b加粗，仅仅是加粗.strong也是加粗，但有强化的作用 -->
+<!-- 行内块标签 -->
+	<!-- 代表: img   -->
+<!-- 搜素引擎需要注意的三个必要因素 -->
+	<!--   T  D  K、， -->
+		<title></title>
+		<meta name="Description" content="描述信息">
+		<meta name="Keywords" content="n个关键词">
+</body>
+</html>
+
+
+
+
+<!-- css -->
+	<!-- *通配符选择器 -->
+		<!-- 选择的是页面中所有的标签  包括body -->
+	<!-- div{} -->
+		<!-- 标签选择器  选择的是页面中所有的这一类标签 -->
+	<!-- .box{} -->
+		<!-- 类选择器  选择的是所有的class="类名" -->
+	<!-- #box -->
+		<!-- id选择器  选择的是当前页面的id="" -->
+	<!-- 行内样式 -->
+<!-- 盒子线型 -->
+	<!-- solid  dashed  dotted -->
+	<!-- 海鲜  虚线  点线 -->
+	<!-- 盒子宽度=内容区域的宽度+左右border的宽+左右padding的宽 -->
+	padding:内间距  内容距离边框的值
+	border:边框
+	margin：外边框  盒子距离其他内容之间的值
+	margin:50px;  值只有一个的情况下就是说四个方向的值都相同
+<!-- 方向：上右下左 -->
+	<!-- margin:20px 30px 40px 50px; -->
+<!-- 值有两个说明上下一样，左右一样 -->
+	<!-- margin:20px 30px -->
+<!-- 三个值说明上下不一样，左右一样 -->
+	<!-- margin:20px 30px 40px; -->
+<!-- 盒子的高度与字体行高一致时，字体显示在盒子垂直方向的中间 -->
+<!-- 文字的下划线 -->
+	size-decoration:underline;
+	不要下划线：none
+<!-- 鼠标经过超链接时显示 -->
+	a:hover{}
+<!-- 中划线 -->
+	text-decoration: line-through; 中划线的样式
+<!-- 非标准文档流量 -->
+	display:决定元素的显示方式，包括：none  block  inline  inline-block
+	1.css中有三种方式将标准文档流转变成非标准文档流：（非标准文档流中元素都表现为行内块元素：inline-block）
+	2.将标准文档流转换成非标准文档流的方式：（脱标）
+		1，浮动   2，绝对定位   3，固定定位   
+	3.浮动。
+		1，float：left|right;
+		左浮动|右浮动
+		浮动元素会脱离标准文档流(不再占用标准文档流的位置)
+		特点：
+		1，浮动元素之间会相互贴靠
+		（前提是当父元素的宽度小于浮动元素的宽是会自动拆行显示）
+		2，浮动的元素会有字围现象
+		3， 浮动元素宽度会收缩（没设置宽的情况下,内容多宽元素就有多宽)
